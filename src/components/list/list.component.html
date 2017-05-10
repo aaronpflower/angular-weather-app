@@ -1,0 +1,8 @@
+<ul class="list-group">
+    <a ng-repeat="location in locations track by $index" ui-sref=".location({id: location.id})">
+        <li class="list-group-item">
+            <p>{{location.name}}</p>
+            <button ng-click="deleteLocation(location)" type="button" class="close">&times;</button>
+        </li>
+    </a>
+</ul>
